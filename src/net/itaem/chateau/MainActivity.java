@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
 		
 		//
 		
-		System.out.println("HELLO WORLD");
+		System.out.println("HELLO wenhuixiang");
 	}
 
 	@Override
