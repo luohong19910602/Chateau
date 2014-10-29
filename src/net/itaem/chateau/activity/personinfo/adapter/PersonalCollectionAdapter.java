@@ -45,10 +45,10 @@ public class PersonalCollectionAdapter  extends BaseAdapter{
 	}
 
 	@Override
-	public View getView(int position, View convertView, ViewGroup arg2) {
+	public View getView(int position, View convertView, ViewGroup parent) {
 		 
 		if(convertView == null ){
-			convertView=layoutInflater.inflate(R.layout.util_personal_collection_item, null);
+			convertView=layoutInflater.inflate(R.layout.util_personal_collection_item,parent, false);
 		}
 		
 		ImageView imageView=(ImageView) convertView.findViewById(R.id.personal_collection_product_image);
