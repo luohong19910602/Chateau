@@ -18,5 +18,6 @@
     <color name="app_bg">#FFEEEEEE</color>
     <color name="color_dark">#161C27</color>
     <color name="color_light">#4D6288</color>
+    <color name="more_result_color">#A92974</color>
 
 </resources>

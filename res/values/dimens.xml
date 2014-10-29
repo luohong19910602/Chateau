@@ -32,4 +32,11 @@
     <dimen name="help_content_text_size">18dp</dimen>
     <dimen name="help_customer_text_size">14dp</dimen>
     
+    <!-- 商品列表界面字体大小-->
+    <dimen name="shopping_name_text_size">20dp</dimen>
+    <dimen name="shopping_money_text_size">20dp</dimen>
+    <dimen name="shopping_remark_text_size">14dp</dimen>
+    <dimen name="shopping_select_btn_text_size">20dp</dimen>
+    
+    
 </resources>

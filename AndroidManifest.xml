@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         <activity
-            android:name="net.itaem.chateau.activity.help.HelpActivity"
+            android:name="net.itaem.chateau.activity.shopping.ProductListActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

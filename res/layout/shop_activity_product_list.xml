@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-    
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <include
+        android:id="@+id/shoppingTitleBar"
+        layout="@layout/shopping_action_bar" />
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoppingTitleBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:divider="@drawable/bg_main"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="20dp"
+         >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_more"
+            android:layout_centerVertical="true"
+            android:id="@+id/moreResult"
+            android:textColor="@color/more_result_color"
+             />
+
+        <ImageView 
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/shopping_more"
+            android:layout_toRightOf="@id/moreResult"
+            />
+    </RelativeLayout>
 
 </RelativeLayout>

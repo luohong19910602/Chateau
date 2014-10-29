@@ -15,10 +15,16 @@
     <string name="title_login_in">LOG IN</string>
     <string name="title_sign_up">SIGN UP</string>
     <string name="title_translating">TRANSLATING</string>
-
-    
-    
     <string name="sub_title_login">\t Visiting details and sharing  \n    the feedback with your own profile</string>
+
+    <!-- 商品列表界面 -->
+    <string name="shopping_title">ONLINE STORE</string>
+    <string name="shoping_head">PRODUCT</string>
+    <string name="shopping_like">Seletc your favourite product</string>
+    <string name="shopping_more">...more result</string>   
+    <string name="shpping_select_btn">SELECT</string> 
+    
+    
 
     <!-- 登陆 界面 -->
     <string name="login_username">Username</string>
