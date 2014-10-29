@@ -1,8 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:background="@drawable/bg_main" >
 
-</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/aboutTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_head" >
+
+        <RelativeLayout
+            android:id="@+id/action_bar_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/action_bar_left_imageview"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/help_back" />
+
+            <ImageView
+                android:id="@+id/action_bar_right_imageview"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_right_menu" />
+
+            <TextView
+                android:id="@+id/action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/action_bar_left_imageview"
+                android:text="@string/help_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/action_bar_text_size" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/action_bar_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/action_bar_relative_layout"
+            android:background="@drawable/bg_title_main"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/help_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+    </RelativeLayout>
+
+    <!-- 这里存放about的内容 -->
+
+    <LinearLayout
+        android:id="@+id/about_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutTitleBar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/about_not_selected"
+            android:gravity="center"
+            android:text="@string/help_instructions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/help_content_text_size"
+            android:layout_marginTop="30dp"
+             />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/about_not_selected"
+            android:gravity="center"
+            android:text="@string/help_faqs"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/help_content_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/help_customer_service"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/help_customer_text_size"
+            android:background="@drawable/about_not_selected"
+             />
+    </LinearLayout>
+    
+</RelativeLayout>

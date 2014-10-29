@@ -50,6 +50,11 @@
     <string name="about_top_group">Top Group(China)</string>
     <string name="about_copy_right">copyright @ 2014 All rights reserved.</string>
     
+    <!-- 帮助界面 -->
+    <string name="help_title">HELP</string>
+    <string name="help_instructions">Instructions</string>
+    <string name="help_faqs">FAQS</string>
+    <string name="help_customer_service">Customer Service:help@ifavine.com</string>
     
     
 </resources>
