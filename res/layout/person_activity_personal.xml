@@ -1,8 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:background="@drawable/bg_main" >
+     <!-- android:background="@drawable/bg_main" -->
+ <include
+    android:id="@+id/action_bar"
+    layout="@layout/view_action_bar"/>
+<!-- 下面的 内容可以滚动 --> 
+<ScrollView
+    android:layout_below="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"> 
 
-</LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+          
+<FrameLayout
+    android:id="@+id/personal_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="0dp"
+    android:padding="0dp" >
+
+    <ImageView
+        android:id="@+id/personal_head_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/personal_bg" />
+
+    <ImageView
+        android:id="@+id/personal_bg_image"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:padding="1dp"
+        android:src="@drawable/personal_head_image" 
+        android:background="@drawable/personal_head_image_bg"/>
+    
+</FrameLayout>
+
+<ImageView 
+    android:id="@+id/personal_image_head_line"
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:layout_below="@+id/personal_framelayout"
+    android:layout_marginTop="-5dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/personal_center_line"/>
+
+
+
+
+
+<!-- Alieses-->
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_alieses"
+    android:layout_below="@+id/personal_image_head_line"
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/person_option_line_normal">
+        <TextView 
+            android:id="@+id/personal_option_text_aliases"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_aliases"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/personal_option_text_aliases"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="Fighter"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+
+<!-- email -->
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_email"
+    android:layout_below="@+id/personal_relative_layout_alieses"
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/person_option_line_normal">
+        <TextView 
+            android:id="@+id/personal_option_text_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_email"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/personal_option_text_email"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="494863082@qq.com"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+
+<!-- My Order-->
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_my_order"
+    android:clickable="true"
+    android:layout_below="@+id/personal_relative_layout_email"
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/selector_btn_personal_option_item">
+        <TextView 
+            android:id="@+id/personal_option_text_aliases"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_my_order"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="@string/personal_option_icon"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+<!-- My Comments -->
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_my_comments"
+    android:clickable="true"
+    android:layout_below="@+id/personal_relative_layout_my_order"
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/selector_btn_personal_option_item">
+        <TextView 
+            android:id="@+id/personal_option_text_my_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_my_comments"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="@string/personal_option_icon"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+    
+<!-- My Favorites -->
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_my_favorites"
+    android:clickable="true"
+    android:layout_below="@+id/personal_relative_layout_my_comments"
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/selector_btn_personal_option_item">
+        <TextView 
+            android:id="@+id/personal_option_text_my_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_my_favorites"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="@string/personal_option_icon"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+    
+<!-- My Carts -->
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_my_carts"
+    android:clickable="true"
+    android:layout_below="@+id/personal_relative_layout_my_favorites"      
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/selector_btn_personal_option_item">
+        <TextView 
+            android:id="@+id/personal_option_text_my_carts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_my_cart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="@string/personal_option_icon"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+    
+<!-- Delivery Address -->   
+  <RelativeLayout 
+    android:id="@+id/personal_relative_layout_delivery_address"
+    android:clickable="true"
+    android:layout_below="@+id/personal_relative_layout_my_carts"      
+	android:layout_width="match_parent"        
+    android:layout_height="@dimen/personal_option_height"
+    android:layout_marginLeft="@dimen/personal_option_margin_left"
+    android:background="@drawable/selector_btn_personal_option_item">
+        <TextView 
+            android:id="@+id/personal_option_text_delivery_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/personal_option_text_margin_left"
+            android:textSize="@dimen/personal_option_text_size"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:text="@string/personal_delivery_address"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="@dimen/personal_option_text_size"
+            android:text="@string/personal_option_icon"
+            android:textColor="@color/color_theme"/>
+    </RelativeLayout>
+   
+  
+</RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>
