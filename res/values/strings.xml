@@ -24,6 +24,8 @@
     <string name="shopping_more">...more result</string>   
     <string name="shpping_select_btn">SELECT</string> 
     
+    <!-- 商品详细界面 -->
+    <string name="product_detail_head">MERCHANDISE DISPLAY</string>
     
 
     <!-- 登陆 界面 -->
