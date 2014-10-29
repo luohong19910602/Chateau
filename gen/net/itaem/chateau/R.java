@@ -30,6 +30,12 @@ public final class R {
         public static final int white=0x7f040003;
     }
     public static final class dimen {
+        public static final int about_copyright_text_size=0x7f05000a;
+        public static final int about_footer_size=0x7f05000b;
+        /**  关于部分的字体大小 
+         */
+        public static final int about_text_size=0x7f050008;
+        public static final int about_websit_text_size=0x7f050009;
         /**  action bar 位置 字体大小 
          */
         public static final int action_bar_text_size=0x7f050002;
@@ -56,39 +62,45 @@ public final class R {
         public static final int title_text_size=0x7f050003;
     }
     public static final class drawable {
-        public static final int bg_head=0x7f020000;
-        public static final int bg_input_text=0x7f020001;
-        public static final int bg_main=0x7f020002;
-        public static final int bg_title_main=0x7f020003;
-        public static final int bg_title_subhead=0x7f020004;
-        public static final int btn_left=0x7f020005;
-        public static final int btn_right_menu=0x7f020006;
-        public static final int btn_style_one_focused=0x7f020007;
-        public static final int btn_style_one_normal=0x7f020008;
-        public static final int btn_style_two_focused=0x7f020009;
-        public static final int btn_style_two_normal=0x7f02000a;
-        public static final int ic_launcher=0x7f02000b;
-        public static final int select_down=0x7f02000c;
+        public static final int about_back=0x7f020000;
+        public static final int about_content=0x7f020001;
+        public static final int about_not_selected=0x7f020002;
+        public static final int about_selected=0x7f020003;
+        public static final int bg_head=0x7f020004;
+        public static final int bg_input_text=0x7f020005;
+        public static final int bg_main=0x7f020006;
+        public static final int bg_title_main=0x7f020007;
+        public static final int bg_title_subhead=0x7f020008;
+        public static final int btn_left=0x7f020009;
+        public static final int btn_right_menu=0x7f02000a;
+        public static final int btn_style_one_focused=0x7f02000b;
+        public static final int btn_style_one_normal=0x7f02000c;
+        public static final int btn_style_two_focused=0x7f02000d;
+        public static final int btn_style_two_normal=0x7f02000e;
+        public static final int ic_launcher=0x7f02000f;
+        public static final int select_down=0x7f020010;
     }
     public static final class id {
-        public static final int action_bar=0x7f090000;
-        public static final int action_bar_left_imageview=0x7f09000d;
-        public static final int action_bar_main_title=0x7f090010;
-        public static final int action_bar_relative_layout=0x7f09000c;
-        public static final int action_bar_right_imageview=0x7f09000e;
-        public static final int action_bar_title=0x7f09000f;
-        public static final int action_settings=0x7f090011;
-        public static final int login_btn_forgot_password=0x7f090004;
-        public static final int login_btn_login=0x7f090005;
-        public static final int login_btn_no_account=0x7f090006;
-        public static final int login_btn_sign_up=0x7f090007;
-        public static final int login_linear_layout_confirm_password=0x7f090009;
-        public static final int login_linear_layout_email=0x7f090008;
-        public static final int login_linear_layout_fill__id=0x7f09000b;
-        public static final int login_linear_layout_password=0x7f090003;
-        public static final int login_linear_layout_user_type=0x7f09000a;
-        public static final int login_linear_layout_username=0x7f090002;
-        public static final int login_title=0x7f090001;
+        public static final int aboutTitleBar=0x7f090000;
+        public static final int about_content=0x7f090006;
+        public static final int action_bar=0x7f090007;
+        public static final int action_bar_left_imageview=0x7f090002;
+        public static final int action_bar_main_title=0x7f090005;
+        public static final int action_bar_relative_layout=0x7f090001;
+        public static final int action_bar_right_imageview=0x7f090003;
+        public static final int action_bar_title=0x7f090004;
+        public static final int action_settings=0x7f090013;
+        public static final int login_btn_forgot_password=0x7f09000b;
+        public static final int login_btn_login=0x7f09000c;
+        public static final int login_btn_no_account=0x7f09000d;
+        public static final int login_btn_sign_up=0x7f09000e;
+        public static final int login_linear_layout_confirm_password=0x7f090010;
+        public static final int login_linear_layout_email=0x7f09000f;
+        public static final int login_linear_layout_fill__id=0x7f090012;
+        public static final int login_linear_layout_password=0x7f09000a;
+        public static final int login_linear_layout_user_type=0x7f090011;
+        public static final int login_linear_layout_username=0x7f090009;
+        public static final int login_title=0x7f090008;
     }
     public static final class layout {
         public static final int about_activity=0x7f030000;
@@ -112,6 +124,16 @@ public final class R {
         public static final int main=0x7f080000;
     }
     public static final class string {
+        public static final int about_copy_right=0x7f060021;
+        public static final int about_ifavine_inc=0x7f06001e;
+        public static final int about_ifavine_sas=0x7f06001f;
+        public static final int about_privacy_policy=0x7f06001c;
+        public static final int about_terms_of_service=0x7f06001b;
+        /**  关于界面 
+         */
+        public static final int about_title=0x7f06001a;
+        public static final int about_top_group=0x7f060020;
+        public static final int about_websit=0x7f06001d;
         public static final int action_bar_login_in=0x7f060003;
         public static final int action_bar_online_store=0x7f060004;
         public static final int action_bar_personal_center=0x7f060005;

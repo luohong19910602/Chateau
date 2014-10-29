@@ -40,4 +40,16 @@
     <string name="distributor">DISTRIBUTOR</string>
     <string name="register_sign_up_now">sign up now</string>
     
+    <!-- 关于界面 -->
+    <string name="about_title">ABOUT</string>
+    <string name="about_terms_of_service">Terms of Service</string>
+    <string name="about_privacy_policy">Privacy Policy</string>
+    <string name="about_websit">www.ifavine.com</string>
+    <string name="about_ifavine_inc">IFAVINE Inc.(USA)</string>
+    <string name="about_ifavine_sas">IFAVINE S.A.S(France)</string>
+    <string name="about_top_group">Top Group(China)</string>
+    <string name="about_copy_right">copyright @ 2014 All rights reserved.</string>
+    
+    
+    
 </resources>
