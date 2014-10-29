@@ -7,12 +7,23 @@
     <include
         android:id="@+id/shoppingTitleBar"
         layout="@layout/shopping_action_bar" />
+    
+    <TextView 
+    android:id="@+id/shopping_head"
+    android:layout_below="@+id/shoppingTitleBar"
+    android:layout_height="70dp"
+    android:layout_width="match_parent"
+    android:text="@string/shopping_like"
+    android:textColor="@color/white"
+    android:textSize="@dimen/sub_title_text_size"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/bg_title_subhead"/>
 
     <ListView
         android:id="@+id/product_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/shoppingTitleBar"
+        android:layout_below="@id/shopping_head"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:divider="@drawable/bg_main"
@@ -20,7 +31,7 @@
         android:layout_marginTop="20dp"
          >
     </ListView>
-
+    
     <RelativeLayout
         android:id="@+id/footer"
         android:layout_width="wrap_content"

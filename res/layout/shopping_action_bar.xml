@@ -45,7 +45,7 @@
         android:layout_below="@+id/action_bar_relative_layout"
         android:background="@drawable/bg_title_main"
         android:gravity="center_horizontal|center_vertical"
-        android:text="@string/shopping_like"
+        android:text="@string/shoping_head"
         android:textColor="@color/white"
         android:textSize="@dimen/title_text_size" />
 
