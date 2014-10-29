@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/personal_collection_item_height"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/personal_collection_item_bg" >
+    
+    <ImageView
+        android:id="@+id/personal_collection_product_image"
+        android:layout_width="@dimen/personal_collection_product_image_width"
+        android:layout_alignParentLeft="true"
+        android:layout_height="@dimen/personal_collection_product_image_height"
+        android:src="@drawable/product"/>
+    
+    <ImageView
+        android:id="@+id/personal_collection_devide_line" 
+        android:layout_width="2dp"
+        android:layout_toRightOf="@+id/personal_collection_product_image"
+        android:layout_height="@dimen/personal_collection_product_image_height"
+        android:src="@drawable/personal_collection_item_devide_line"/>
+    
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/personal_collection_devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <TextView 
+            android:id="@+id/personal_collection_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/personal_collection_product_name_text_size"
+            android:text="ISomm"/>
+        <TextView 
+            android:id="@+id/personal_collection_product_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ 			android:layout_below="@+id/personal_collection_product_name"
+ 			android:layout_alignParentLeft="true"
+ 			android:textSize="@dimen/personal_collection_product_desc_text_size"
+            android:text="teste on demand"/>
+           
+        <TextView 
+            android:id="@+id/personal_collection_product_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/normal_text_color_gray"
+            android:textSize="@dimen/personal_collection_product_name_text_size"
+            android:text="$2000"/>
+        </RelativeLayout>   
+            
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        
+            <Button 
+                android:layout_alignParentRight="true"
+                android:text="@string/personal_collection_delete"
+                android:textSize="@dimen/personal_collection_btn_delete_text_size"
+                android:layout_width="@dimen/personal_collection_btn_delete_width"
+                android:layout_height="@dimen/personal_collection_btn_delete_height"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_btn_input_three"/>
+        </RelativeLayout>         
+    </LinearLayout>   
+</RelativeLayout>

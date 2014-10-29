@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Chateau</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
-    
-      <string name="action_bar_login_in">LOG IN</string>
-    <string name="action_bar_online_store">ONLINE STORE</string>
-    <string name="action_bar_personal_center">Personal Center</string>
-
-    
-    
-    <string name="title_login_in">LOG IN</string>
-    <string name="title_sign_up">SIGN UP</string>
-    <string name="title_translating">TRANSLATING</string>
-    <string name="sub_title_login">\t Visiting details and sharing  \n    the feedback with your own profile</string>
-
     <!-- 商品列表界面 -->
     <string name="shopping_title">ONLINE STORE</string>
     <string name="shoping_head">PRODUCT</string>
@@ -65,4 +49,46 @@
     <string name="help_customer_service">Customer Service:help@ifavine.com</string>
     
     
+    
+     <string name="app_name">chateau</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    
+    <!-- actionbar -->
+    <string name="action_bar_login_in">LOG IN</string>
+    <string name="action_bar_online_store">ONLINE STORE</string>
+    <string name="action_bar_personal_center">Personal Center</string>
+
+    
+    <!-- 标题 -->
+    <string name="title_login_in">LOG IN</string>
+    <string name="title_sign_up">SIGN UP</string>
+    <string name="title_translating">TRANSLATING</string>
+
+    
+    <!-- 子标题 -->
+    <string name="sub_title_login">\t Visiting details and sharing  \n    the feedback with your own profile</string>
+
+    
+    
+    
+    
+    <!-- 个人中心  -->
+    <string name="personal_aliases">Aliases:</string>
+    <string name="personal_email">E-mail:</string>
+    <string name="personal_my_order">My Order</string>
+    <string name="personal_my_comments">My comments</string>
+    <string name="personal_my_favorites">My Favorites</string>
+    <string name="personal_my_cart">My Cart</string>
+    <string name="personal_delivery_address">Delivery Address</string>
+    <string name="personal_option_icon">> \t\t</string>
+    
+    <string name="personal_collection_delete">DELETE</string>
+    
+    
+	<!-- 选择相片 -->
+    <string name="select_pic_pictures">Pictures</string>
+    <string name="select_pic_album">From the album solve</string>
+    <string name="select_pic_cancel">Cancel</string>
 </resources>
