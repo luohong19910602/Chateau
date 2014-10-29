@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="@dimen/personal_collection_item_height"
-    android:layout_marginLeft="30dp"
-    android:layout_marginRight="30dp"
-    android:background="@drawable/personal_collection_item_bg" >
+    android:orientation="vertical">
     
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/personal_collection_item_bg" >
     <ImageView
         android:id="@+id/personal_collection_product_image"
         android:layout_width="@dimen/personal_collection_product_image_width"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_height="@dimen/personal_collection_product_image_height"
         android:src="@drawable/product"/>
     
     <ImageView
         android:id="@+id/personal_collection_devide_line" 
-        android:layout_width="2dp"
-        android:layout_toRightOf="@+id/personal_collection_product_image"
+        android:layout_width="1dp"
         android:layout_height="@dimen/personal_collection_product_image_height"
-        android:src="@drawable/personal_collection_item_devide_line"/>
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/personal_collection_product_image"
+        android:background="@drawable/personal_collection_item_devide_line"/>
     
 
     <LinearLayout
@@ -76,5 +83,8 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/selector_btn_input_three"/>
         </RelativeLayout>         
-    </LinearLayout>   
+    </LinearLayout>  
+     
 </RelativeLayout>
+    
+</LinearLayout>
