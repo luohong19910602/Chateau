@@ -5,4 +5,39 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 
+    
+      <string name="action_bar_login_in">LOG IN</string>
+    <string name="action_bar_online_store">ONLINE STORE</string>
+    <string name="action_bar_personal_center">Personal Center</string>
+
+    
+    
+    <string name="title_login_in">LOG IN</string>
+    <string name="title_sign_up">SIGN UP</string>
+    <string name="title_translating">TRANSLATING</string>
+
+    
+    
+    <string name="sub_title_login">\t Visiting details and sharing  \n    the feedback with your own profile</string>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- 登陆 界面 -->
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="login_login">LOGIN</string>
+    <string name="login_no_account">Do not have an account?</string>
+    <string name="login_no_sign_up">SIGN UP</string>
+    
+    
+    
 </resources>
