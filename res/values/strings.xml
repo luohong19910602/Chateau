@@ -20,16 +20,6 @@
     
     <string name="sub_title_login">\t Visiting details and sharing  \n    the feedback with your own profile</string>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <!-- 登陆 界面 -->
     <string name="login_username">Username</string>
     <string name="login_password">Password</string>
@@ -38,6 +28,16 @@
     <string name="login_no_account">Do not have an account?</string>
     <string name="login_no_sign_up">SIGN UP</string>
     
-    
+    <!-- 注册界面 -->
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_confirm_password">Confirm password</string>
+    <string name="register_user_type">User type</string>
+    <string name="reister_fill_the_mechine_id">Fill the machine ID</string>
+    <string name="register_general_user">GENERAL USER</string>
+    <string name="register_winery_user">WINERY USER</string>
+    <string name="vip">VIP</string>
+    <string name="distributor">DISTRIBUTOR</string>
+    <string name="register_sign_up_now">sign up now</string>
     
 </resources>

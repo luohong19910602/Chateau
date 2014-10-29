@@ -10,32 +10,138 @@ package net.itaem.chateau;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int ade_dark_blue=0x7f040007;
+        public static final int ade_dark_green=0x7f040006;
+        public static final int app_bg=0x7f04000e;
+        public static final int black=0x7f040004;
+        public static final int blue=0x7f040002;
+        public static final int color_dark=0x7f04000f;
+        public static final int color_light=0x7f040010;
+        public static final int forget_passwd=0x7f04000d;
+        public static final int green=0x7f040001;
+        public static final int left_menu_bg=0x7f040005;
+        public static final int left_menu_category_text_color=0x7f04000a;
+        public static final int left_menu_section_bg=0x7f04000b;
+        public static final int normal_text_color_gray=0x7f04000c;
+        public static final int red=0x7f040000;
+        public static final int side_menu_layout_bg_hi=0x7f040008;
+        public static final int sidebar_account_layout_bg=0x7f040009;
+        public static final int white=0x7f040003;
+    }
     public static final class dimen {
+        /**  action bar 位置 字体大小 
+         */
+        public static final int action_bar_text_size=0x7f050002;
         /**  Default screen margins, per the Android Design guidelines. 
 
          Customize dimensions originally defined in res/values/dimens.xml (such as
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        /**  输入框 的高度 
+         */
+        public static final int input_text_height=0x7f050005;
+        /**  输入框 的 左右间距 
+         */
+        public static final int input_text_margin_left=0x7f050006;
+        public static final int input_text_margin_right=0x7f050007;
+        /**  action bar 下面位置  字体大小 
+         */
+        public static final int sub_title_text_size=0x7f050004;
+        /**  action bar 下面位置  字体大小 
+         */
+        public static final int title_text_size=0x7f050003;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int bg_head=0x7f020000;
+        public static final int bg_input_text=0x7f020001;
+        public static final int bg_main=0x7f020002;
+        public static final int bg_title_main=0x7f020003;
+        public static final int bg_title_subhead=0x7f020004;
+        public static final int btn_left=0x7f020005;
+        public static final int btn_right_menu=0x7f020006;
+        public static final int btn_style_one_focused=0x7f020007;
+        public static final int btn_style_one_normal=0x7f020008;
+        public static final int btn_style_two_focused=0x7f020009;
+        public static final int btn_style_two_normal=0x7f02000a;
+        public static final int ic_launcher=0x7f02000b;
+        public static final int select_down=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_bar=0x7f090000;
+        public static final int action_bar_left_imageview=0x7f09000d;
+        public static final int action_bar_main_title=0x7f090010;
+        public static final int action_bar_relative_layout=0x7f09000c;
+        public static final int action_bar_right_imageview=0x7f09000e;
+        public static final int action_bar_title=0x7f09000f;
+        public static final int action_settings=0x7f090011;
+        public static final int login_btn_forgot_password=0x7f090004;
+        public static final int login_btn_login=0x7f090005;
+        public static final int login_btn_no_account=0x7f090006;
+        public static final int login_btn_sign_up=0x7f090007;
+        public static final int login_linear_layout_confirm_password=0x7f090009;
+        public static final int login_linear_layout_email=0x7f090008;
+        public static final int login_linear_layout_fill__id=0x7f09000b;
+        public static final int login_linear_layout_password=0x7f090003;
+        public static final int login_linear_layout_user_type=0x7f09000a;
+        public static final int login_linear_layout_username=0x7f090002;
+        public static final int login_title=0x7f090001;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int about_activity=0x7f030000;
+        public static final int activity_main=0x7f030001;
+        public static final int help_activity=0x7f030002;
+        public static final int login_activity_forget_email=0x7f030003;
+        public static final int login_activity_forget_passwrod=0x7f030004;
+        public static final int login_activity_forget_verification=0x7f030005;
+        public static final int login_activity_login=0x7f030006;
+        public static final int login_activity_sign_up=0x7f030007;
+        public static final int person_activity_comments=0x7f030008;
+        public static final int person_activity_my_collection=0x7f030009;
+        public static final int person_activity_order_list=0x7f03000a;
+        public static final int person_activity_personal=0x7f03000b;
+        public static final int shop_activity_product=0x7f03000c;
+        public static final int shop_activity_product_detail=0x7f03000d;
+        public static final int shop_activity_product_list=0x7f03000e;
+        public static final int view_action_bar=0x7f03000f;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int action_bar_login_in=0x7f060003;
+        public static final int action_bar_online_store=0x7f060004;
+        public static final int action_bar_personal_center=0x7f060005;
+        public static final int action_settings=0x7f060001;
+        public static final int app_name=0x7f060000;
+        public static final int distributor=0x7f060018;
+        public static final int hello_world=0x7f060002;
+        public static final int login_forgot_password=0x7f06000c;
+        public static final int login_login=0x7f06000d;
+        public static final int login_no_account=0x7f06000e;
+        public static final int login_no_sign_up=0x7f06000f;
+        public static final int login_password=0x7f06000b;
+        /**  登陆 界面 
+         */
+        public static final int login_username=0x7f06000a;
+        public static final int register_confirm_password=0x7f060012;
+        /**  注册界面 
+         */
+        public static final int register_email=0x7f060010;
+        public static final int register_general_user=0x7f060015;
+        public static final int register_password=0x7f060011;
+        public static final int register_sign_up_now=0x7f060019;
+        public static final int register_user_type=0x7f060013;
+        public static final int register_winery_user=0x7f060016;
+        public static final int reister_fill_the_mechine_id=0x7f060014;
+        public static final int sub_title_login=0x7f060009;
+        public static final int title_login_in=0x7f060006;
+        public static final int title_sign_up=0x7f060007;
+        public static final int title_translating=0x7f060008;
+        public static final int vip=0x7f060017;
     }
     public static final class style {
         /** 
@@ -59,10 +165,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060001;
+        public static final int AppTheme=0x7f070001;
     }
 }
