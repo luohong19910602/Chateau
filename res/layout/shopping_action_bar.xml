@@ -49,7 +49,6 @@
         android:text="@string/shoping_head"
         android:textColor="@color/white"
         android:textSize="@dimen/title_text_size"
-        android:visibility="gone"
          />
     
     <!-- 这部分内容根据activity而改变，所以默认情况下设置为visibility为gone -->
@@ -63,7 +62,6 @@
         android:text="@string/product_detail_head"
         android:textColor="@color/white"
         android:textSize="@dimen/title_text_size"
-        android:visibility="gone"
          />
     
 </RelativeLayout>

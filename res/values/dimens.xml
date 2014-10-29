@@ -65,6 +65,11 @@
     
     <!-- 选择图片 item 的高度 -->
     <dimen name="select_pic_item_height">35dip</dimen>
+    <!-- 商品详情字体大小 -->
+    <dimen name="product_detail_text_size">20dp</dimen>
+    
+    <!-- 设置每个界面默认的左右margin大小 -->
+    <dimen name="normal_margin">20dp</dimen>
     
     
 </resources>

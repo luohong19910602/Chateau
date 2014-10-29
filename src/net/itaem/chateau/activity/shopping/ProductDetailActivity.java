@@ -1,5 +1,6 @@
 package net.itaem.chateau.activity.shopping;
 
+import net.itaem.chateau.R;
 import android.app.Activity;
 import android.os.Bundle;
 
@@ -8,10 +9,12 @@ import android.os.Bundle;
  * */
 public class ProductDetailActivity extends Activity {
 
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.shop_activity_product_detail);
 	}
 
-	
+
 }

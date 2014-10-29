@@ -9,9 +9,15 @@
     <string name="shpping_select_btn">SELECT</string> 
     
     <!-- 商品详细界面 -->
-    <string name="product_detail_head">MERCHANDISE DISPLAY</string>
+    <string name="product_detail_head">MERCHANDISE DISPLAY:</string>
+    <string name="product_detail_name">NAME:</string>
+    <string name="product_detail_price">PRICE:</string>
+    <string name="product_detail_old_price">PRICE:</string>
+    <string name="product_detail_model">MODEL:</string>
+    <string name="product_detail_color">COLOR:</string>
+    <string name="product_detail_quantity">QUANTITY:</string>
+    <string name="product_detail_graphic_details">GRAPHIC DETAILS:</string>
     
-
     <!-- 登陆 界面 -->
     <string name="login_username">Username</string>
     <string name="login_password">Password</string>
