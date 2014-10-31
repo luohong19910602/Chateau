@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <include
+        android:id="@+id/productDetailBar"
+        layout="@layout/shopping_action_bar" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/wine"
+        android:scaleType="fitXY"
+        android:id="@+id/productPicture"
+        android:layout_below="@id/productDetailBar"
+        />
+    
+    <TextView 
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="14sp"
+        android:text="
+        This is the best wine in the world.\n
+        This is the best wine in the world.\n
+        This is the best wine in the world.\n
+        This is the best wine in the world.\n
+        This is the best wine in the world.\n
+        This is the best wine in the world.\n
+        This is the best wine in the world."
+        android:layout_below="@id/productPicture"
+        android:textColor="@color/black"
+        />
+</RelativeLayout>

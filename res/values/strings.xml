@@ -91,10 +91,32 @@
     <string name="personal_option_icon">> \t\t</string>
     
     <string name="personal_collection_delete">DELETE</string>
-    
+    <string name="sub_title_personal_mycart">\t Pending payment of goods \n \t to confirm payment</string>
     
 	<!-- 选择相片 -->
     <string name="select_pic_pictures">Pictures</string>
     <string name="select_pic_album">From the album solve</string>
     <string name="select_pic_cancel">Cancel</string>
+    
+    
+    <!-- 个人中心  -->
+    <string name="personal_mycart_delete">DELETE</string>
+    <string name="personal_mycart_sellement">SELLEMENT</string>
+    <string name="personal_mycart_continue_shopping">CONTINUE SHOPPING</string>
+    
+    
+    <string name="personal_clip_image_cancel">Cancel</string>
+    <string name="personal_clip_image_ok">OK</string>
+    
+    <!-- 填写  收货地址界面-->
+	<string name="personal_shopping_name">NAME</string>
+	<string name="personal_shopping_mobile">MOBILE\nNUMBER</string>
+	<string name="personal_shopping_phone">PHONE\nNUMBER</string>
+	<string name="personal_shopping_address_info">ADDRESS INFORMATION</string>
+	<string name="personal_shopping_state">STATE</string>
+	<string name="personal_shopping_provinces">PROVINCES</string>
+	<string name="personal_shopping_citys">CITYS</string>
+	<string name="personal_shopping_counties">COUNTIES</string>
+	<string name="personal_shopping_streets">STREET</string>
+	<string name="personal_shopping_save">SAVE ADDRESS INFORMATION</string>
 </resources>

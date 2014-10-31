@@ -31,19 +31,14 @@
         android:background="@drawable/bg_input_text"
         android:orientation="horizontal" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/input_text_height"
-            android:gravity="center_vertical"
-            android:text="@string/register_email"
-            android:textColor="@color/black" />
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_text_height"
             android:layout_marginLeft="5dp"
             android:background="@null"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:hint="Email"
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -58,18 +53,12 @@
         android:background="@drawable/bg_input_text"
         android:orientation="horizontal" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/input_text_height"
-            android:gravity="center_vertical"
-            android:text="@string/register_password"
-            android:textColor="@color/black" />
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_text_height"
             android:layout_marginLeft="5dp"
             android:background="@null"
+            android:hint="Password"
             android:textColor="@color/black" />
     </LinearLayout>
 
@@ -85,18 +74,13 @@
         android:background="@drawable/bg_input_text"
         android:orientation="horizontal" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/input_text_height"
-            android:gravity="center_vertical"
-            android:text="@string/register_confirm_password"
-            android:textColor="@color/black" />
-
         <EditText
             android:layout_width="match_parent"
             android:layout_height="@dimen/input_text_height"
             android:layout_marginLeft="5dp"
             android:background="@null"
+            
+            android:hint="Confirm Password"
             android:textColor="@color/black" />
     </LinearLayout>
 

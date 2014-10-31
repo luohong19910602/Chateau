@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+ 
+    
+<include
+    android:id="@+id/action_bar"
+     layout="@layout/view_action_bar"/>
+
+<ScrollView 
+    android:layout_below="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<!-- 使用默认的 地址 -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_default_address"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+     <ImageView
+         android:layout_width="0dp"
+         android:layout_height="20dp"
+         android:layout_weight="1"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_gravity="center_vertical|center_horizontal"
+         android:background="@drawable/personal_shopping_address_no_select"/>
+
+<TextView 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+	android:layout_weight="16"
+	android:textSize="11dp"
+	android:text="THANHE DISTRICT,GYANGZHOU CITY,GUANGDONG PROVINCE.12424233445"
+	android:textColor="@color/color_theme"/>
+<Button 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+	android:layout_weight="3"
+	android:layout_marginTop="10dp"
+	android:layout_marginBottom="10dp"
+	android:layout_marginLeft="5dp"
+	android:layout_marginRight="5dp"
+	android:text="DELETE"
+	android:textSize="10dp"
+	android:textColor="@color/white"
+	android:background="@drawable/selector_btn_input_one"/>
+
+</LinearLayout>
+
+<!-- 使用 新地址 -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_new_address"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/personal_shopping_linear_layout_default_address"
+    android:orientation="horizontal">
+     <ImageView
+         android:layout_width="0dp"
+         android:layout_height="20dp"
+         android:layout_weight="1"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_gravity="center_vertical|center_horizontal"
+       	 android:src="@drawable/personal_shopping_address_selected"
+         android:background="@drawable/personal_shopping_address_no_select"/>
+
+<TextView 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+	android:layout_weight="16"
+	android:gravity="center_vertical|left"
+	android:textSize="11dp"
+	android:text="USING THE NEW ADDRESS INGORMATION"
+	android:textColor="@color/color_theme"/>
+
+</LinearLayout>
+
+
+<!-- 填写用户名 -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_username"
+    android:layout_below="@+id/personal_shopping_linear_layout_new_address"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_name"/>
+    
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="16"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+</LinearLayout>
+
+<!-- 填写 mobile number -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_mobile_number"
+    android:layout_below="@+id/personal_shopping_linear_layout_username"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_mobile"/>
+    
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="16"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+</LinearLayout>
+
+<!-- 填写 phone number -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_phone_number"
+    android:layout_below="@+id/personal_shopping_linear_layout_mobile_number"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_phone"/>
+    
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="16"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+</LinearLayout>
+
+
+<!-- 下面是地址信息 -->
+<TextView 
+    android:id="@+id/personal_shopping_text_address_info"
+    android:layout_below="@+id/personal_shopping_linear_layout_phone_number"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_marginLeft="15dp"
+    android:textColor="@color/black"
+    android:gravity="center_vertical|left"
+    android:text="@string/personal_shopping_address_info"/>
+
+
+
+<!-- 选择地区 -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_select_state"
+    android:layout_below="@+id/personal_shopping_text_address_info"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_state"/>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="13"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:text="PLEASE SELECT..."
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_input_seven"/>
+</LinearLayout>
+
+<!-- 选择省份-->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_select_provience"
+    android:layout_below="@+id/personal_shopping_linear_layout_select_state"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_provinces"/>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="13"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:text="PLEASE SELECT..."
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_input_seven"/>
+</LinearLayout>
+
+<!-- 选择  city-->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_select_city"
+    android:layout_below="@+id/personal_shopping_linear_layout_select_provience"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_citys"/>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="13"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:text="PLEASE SELECT..."
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_input_seven"/>
+</LinearLayout>
+
+<!-- 选择 counties -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_select_counties"
+    android:layout_below="@+id/personal_shopping_linear_layout_select_city"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_counties"/>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="13"
+        android:layout_height="35dp"
+        android:textSize="15dp"
+        android:text="PLEASE SELECT..."
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_btn_input_seven"/>
+</LinearLayout>
+
+
+
+<!-- 填写  STREET -->
+<LinearLayout
+    android:id="@+id/personal_shopping_linear_layout_street"
+    android:layout_below="@+id/personal_shopping_linear_layout_select_counties"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="15dp"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="@color/color_theme"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="*"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="@string/personal_shopping_streets"/>
+    
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@color/white"/>
+    
+</LinearLayout>
+
+<Button 
+    android:layout_below="@+id/personal_shopping_linear_layout_street"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/selector_btn_input_one"
+        android:textColor="@color/white"
+        android:text="SAVE ADDRESS INFORMATION"/>
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
