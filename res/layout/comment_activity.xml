@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+
+    <include
+        android:id="@+id/shoppingTitleBar"
+        layout="@layout/shopping_action_bar" />
+
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoppingTitleBar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:divider="@drawable/bg_main"
+        android:dividerHeight="10dp"
+        android:layout_marginTop="20dp"
+         >
+    </ListView>
+
+</RelativeLayout>

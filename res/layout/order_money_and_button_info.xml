@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- 这里是物流费用 -->
+
+    <RelativeLayout
+        android:id="@+id/freightInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:id="@+id/freight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="$10"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/freightInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/freight"
+            android:text="FREIGHT:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <!-- 这里是订单总金额 -->
+
+    <RelativeLayout
+        android:id="@+id/totalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/freightInfoLayout" >
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="$2000"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/totalInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/total"
+            android:text="TOTAL:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <!-- 这里是各种button -->
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/totalLayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+         >
+
+        <Button
+            android:id="@+id/pendingPayment"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/pending_payment"
+            android:gravity="center"
+            android:text="PENDING PAYMENT"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="12sp"
+             />
+
+        <Button
+            android:id="@+id/comments"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/order_payment"
+            android:gravity="center"
+            android:text="COMMENTS"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/viewLogistics"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/order_payment"
+            android:gravity="center"
+            android:text="VIEW LOGISTICS"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/shipped"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:background="@drawable/order_payment"
+            android:gravity="center"
+            android:text="SHIPPED"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/toBeShipped"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:background="@drawable/order_payment"
+            android:gravity="center"
+            android:text="TO BE SHIPPED"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/cancellOrder"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/order_payment"
+            android:gravity="center"
+            android:text="CANCELL ORDER"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/cancelled"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/order_cancell"
+            android:gravity="center"
+            android:text="CANCELLED"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/confirmReceipt"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:background="@drawable/pending_payment"
+            android:gravity="center"
+            android:text="CONFIRM RECEIPT"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ordersPaid"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/btns"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/order_payment"
+        android:gravity="center"
+        android:text="ORDERS PAID"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
