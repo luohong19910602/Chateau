@@ -1,6 +1,7 @@
 package net.itaem.chateau.activity.personinfo;
 
 
+import net.itaem.chateau.BaseActivity;
 import net.itaem.chateau.R;
 import net.itaem.chateau.activity.order.OrderActivity;
 import android.app.Activity;
@@ -11,11 +12,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
-public class PersonalActivity extends Activity implements OnClickListener{
+public class PersonalActivity extends BaseActivity implements OnClickListener{
 
 	//个人头像 背景，和个人头像
 	private ImageView personal_image_bg,personal_head_image;
@@ -23,18 +25,24 @@ public class PersonalActivity extends Activity implements OnClickListener{
 
 	private RelativeLayout myOrder,myComments,myFavories,myCart,deliveryAddress;
 
+	
 	/**
 	 * 选择文件
 	 */
 	public static final int TO_SELECT_PHOTO = 3;
 
+	
+	
+	protected LinearLayout layoutRightMenu;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+	
 		setContentView(R.layout.person_activity_personal);
+		
+		super.onCreate(savedInstanceState);
+		
 		initCompoments();
-
 
 		byte[] b = getIntent().getByteArrayExtra("bitmap");
 
@@ -47,12 +55,19 @@ public class PersonalActivity extends Activity implements OnClickListener{
 				personal_image_bg.setImageBitmap(bitmap);
 			}
 		}
+	
 	}
 
 	/*
 	 * 初始化组件
 	 */
 	public void initCompoments(){
+		
+		setMainTitle("Personal Center");
+		setSubTitle("Personal Center");
+		setActionBarLeftImage(R.drawable.btn_left);
+		
+		
 		personal_image_bg=(ImageView) findViewById(R.id.personal_bg_image);
 		personal_head_image=(ImageView) findViewById(R.id.personal_head_image);
 		myOrder=(RelativeLayout)findViewById(R.id.personal_relative_layout_my_order);
@@ -115,6 +130,7 @@ public class PersonalActivity extends Activity implements OnClickListener{
 		case R.id.personal_relative_layout_delivery_address:
 			startActivity(new Intent(this, PersonalShoppingAddressActivity.class));
 			break;
+			
 		}
 
 	}
@@ -131,6 +147,7 @@ public class PersonalActivity extends Activity implements OnClickListener{
 
 		}
 	}
-
-
+ 
+	
+	 
 }

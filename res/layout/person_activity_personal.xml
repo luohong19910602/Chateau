@@ -25,7 +25,7 @@
     android:padding="0dp" >
 
     <ImageView
-        android:id="@+id/personal_head_image"
+        android:id="@+id/personal_bg_image"
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_margin="0dp"
@@ -34,7 +34,7 @@
         android:src="@drawable/personal_bg" />
 
     <ImageView
-        android:id="@+id/personal_bg_image"
+        android:id="@+id/personal_head_image"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:layout_marginLeft="20dp"
@@ -264,5 +264,11 @@
 </RelativeLayout>
 </ScrollView>
 
-
+    <include 
+        android:id="@+id/right_menu"
+        layout="@layout/view_right_menu"
+        android:layout_toRightOf="@+id/action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+    
 </RelativeLayout>

@@ -110,4 +110,11 @@
      android:background="@drawable/selector_btn_input_six"
      android:text="@string/personal_mycart_continue_shopping"/>
   </LinearLayout>
+  
+      <include 
+        android:id="@+id/right_menu"
+        layout="@layout/view_right_menu"
+        android:layout_toRightOf="@+id/action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
 </RelativeLayout>

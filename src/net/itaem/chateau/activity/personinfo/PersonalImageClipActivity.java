@@ -2,6 +2,7 @@ package net.itaem.chateau.activity.personinfo;
 
 import java.io.ByteArrayOutputStream;
 
+import net.itaem.chateau.BaseActivity;
 import net.itaem.chateau.R;
 import net.itaem.chateau.activity.personinfo.view.ClipImageLayout;
 import android.app.Activity;
@@ -12,7 +13,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class PersonalImageClipActivity extends Activity implements OnClickListener{
+public class PersonalImageClipActivity extends BaseActivity implements OnClickListener{
 
 	private ClipImageLayout mClipImageLayout;
 	
@@ -31,14 +32,24 @@ public class PersonalImageClipActivity extends Activity implements OnClickListen
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 	
-		super.onCreate(savedInstanceState); 
-		System.out.println("进入PersonalImageClipActivity");
 		setContentView(R.layout.util_personal_clip_image);
+		super.onCreate(savedInstanceState); 
+		setHeadInfo();
+		
+		System.out.println("进入PersonalImageClipActivity");
 		initCompoments();
 		mClipImageLayout = (ClipImageLayout) findViewById(R.id.id_clipImageLayout);
 		 
 		System.out.println("结束PersonalImageClipActivity");
 
+	}
+	
+	
+	public void setHeadInfo(){
+		 setMainTitle("Personal Center");
+		 setSubTitle("MOVE AND ZOOM");
+		 setActionBarLeftImage(R.drawable.btn_left);
+		 
 	}
 	
 	public void initCompoments(){

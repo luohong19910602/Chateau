@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="95dp"
     android:background="@drawable/bg_head" >
     
 
 <RelativeLayout
     android:id="@+id/action_bar_relative_layout"
     android:layout_width="match_parent"
-    android:layout_height="45dp">
+    android:layout_height="50dp">
 <ImageView
     android:id="@+id/action_bar_left_imageview"
-    android:layout_width="45dp"
-    android:layout_height="45dp"   
+    android:layout_width="50dp"
+    android:layout_height="50dp"   
     android:layout_alignParentLeft="true" 
     android:src="@drawable/btn_left" />
   
   <ImageView
     android:id="@+id/action_bar_right_imageview"
-    android:layout_width="45dp"
-    android:layout_height="45dp"   
+    android:layout_width="50dp"
+    android:layout_height="50dp"   
     android:layout_alignParentRight="true" 
     android:src="@drawable/btn_right_menu" />
 
-  <!-- 这里的标题一共有多个，默认情况下设置visibility为gone，根据页面不同，到时候显示其中一个即可 -->
+  
   <TextView
       android:id="@+id/action_bar_title"
       android:layout_width="wrap_content"
@@ -33,29 +33,16 @@
       android:layout_toRightOf="@+id/action_bar_left_imageview"
       android:text="@string/title_login_in"
       android:textSize="@dimen/action_bar_text_size"
-      android:visibility="gone"
        />
-  
-  
-    <TextView
-      android:id="@+id/action_bar_title"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_centerVertical="true"
-      android:textColor="@color/black"
-      android:layout_toRightOf="@+id/action_bar_left_imageview"
-      android:text="@string/title_sign_up"
-      android:textSize="@dimen/action_bar_text_size"
-      android:visibility="gone"
-       />
+ 
 </RelativeLayout>
 
 <TextView 
-    android:id="@+id/action_bar_main_title"
+    android:id="@+id/action_bar_sub_title"
     android:layout_below="@+id/action_bar_relative_layout"
-    android:layout_height="35dp"
+    android:layout_height="45dp"
     android:layout_width="match_parent"
-    android:textColor="@color/black"
+    android:textColor="@color/white"
     android:textSize="@dimen/title_text_size"
     android:gravity="center_horizontal|center_vertical"
     android:background="@drawable/bg_title_main"

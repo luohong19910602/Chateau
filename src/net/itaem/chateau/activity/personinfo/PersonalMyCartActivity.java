@@ -3,24 +3,24 @@ package net.itaem.chateau.activity.personinfo;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.itaem.chateau.BaseActivity;
 import net.itaem.chateau.R;
 import net.itaem.chateau.activity.personinfo.adapter.PersonalMyCartAdapter;
 import net.itaem.chateau.activity.personinfo.vo.PersonalMyCartVo;
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class PersonalMyCartActivity  extends Activity{
+public class PersonalMyCartActivity  extends BaseActivity{
 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
 		
 		setContentView(R.layout.person_activity_my_cart);
-		
+		super.onCreate(savedInstanceState);
+		setHeadInfo();
 		
 		ImageView imageView=(ImageView) findViewById(R.id.action_bar_left_imageview);
 		imageView.setImageResource(R.drawable.shopping_back);
@@ -40,5 +40,13 @@ public class PersonalMyCartActivity  extends Activity{
 		
 		listView.setAdapter(new PersonalMyCartAdapter(this,list));
 		
+	}
+	
+	
+	public void setHeadInfo(){
+		 setMainTitle("ONLINE STORE");
+		 setSubTitle("SHOPPING CART");
+		 setActionBarLeftImage(R.drawable.shopping_back);
+		 
 	}
 }
